@@ -1,0 +1,20 @@
+h1 {
+    color: blue;
+}
+
+img {
+    max-width: 1890px;
+}
+
+ul.interests {
+    /* background-image: url("resources/images/2022FoxFamily_101.jpg"); */
+    background-image: url("https://th.bing.com/th/id/OIP.__mULWmOUA8yERllDQ_ZqwHaE8?pid=ImgDet&rs=1");
+}
+
+a {
+    color: blue;
+}
+
+h1, h2, ol{
+    font-family: sans-serif;
+}
