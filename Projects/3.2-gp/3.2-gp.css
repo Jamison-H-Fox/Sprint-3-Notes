@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* put a border around everything to see where it stops and starts */
+}
+  
+  /* General Styles */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    background-color: #fffafa;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #000;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 4% 0;
+}
+
+a {
+    font-family: "PT Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4f4f4f;
+}
+
+a:hover {
+    color: #fcb131;
+}
+
+i {
+    font-size: 5rem;
+}
+
+/* Header Section Styles */
+header nav {
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    margin-left: 3%;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Top Section Styles*/
+#top {
+    height: 85vh;
+    margin-top: 5%;
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top h2 {
+    color: #000;
+}
+
+/* Farm Section Styles */
+.container {
+    margin-top: 5%;
+}
+/* make the boxes line up beside eachother with space around them */
+.box {
+    border: 3px solid #4f4f4f;
+    text-align: center;
+    padding: 4%;
+    background-color: #fff;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2.25%;
+}
+
+.box h3 {
+    margin: 15% 0;
+}
+
+/* Blank Section Styles */
+.hero-image {
+    height: 40vh;
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* About Section Styles */
+/* make the box of text centered with some space along the sides */
+.text {
+    width: 60%;
+    text-align: center;
+    border: 3px solid #4f4f4f;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.text p {
+    text-align: center;
+    padding: 5%;
+}
+
+/* Gallery Section Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery div .hide {
+    width: 70%;
+    height: 10vh;
+    background-color: #fff;
+    display: none;
+}
+
+.gallery div .hide h2 {
+    font-size: 2.2rem;
+}
+
+.gallery div:hover .hide {
+    display: block;
+}
+
+.farm {
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/barn.jpg?raw=true");
+}
+
+.cook {
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/cook.jpg?raw=true");
+}
+
+.produce {
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/produce.jpg?raw=true");
+}
+
+.animals {
+    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/sheep.jpg?raw=true");
+}
+
+/* Contact Section Styles */
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact h2 {
+    width: 100%;
+}
+
+/* get the left and right side by side */
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    width: 35%;
+    line-height: 2;
+}
+
+.contact-info h3 {
+    text-align: left;
+}
+
+.img-container {
+    width: 70%;
+}
+
+/* Footer Section Styles */
+footer {
+    padding: 2% 0;
+    color: #fff;
+    background-color: #fcb131;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #4f4f4f;
+}
+
+footer div {
+    width: 30%;
+}
+
+nav.social {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.main a {
+    margin: 2% 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Media Queries */
+/* Tablet */
+@media (max-width: 800px) {
+.links {
+    width: 70%;
+}
+.gallery div .hide {
+    width: 70%;
+    background-color: #fff;
+    display: block;
+}
+.gallery div .hide h2 {
+    font-size: 2.2rem;
+}
+.contact-info {
+    width: 50%;
+}
+.img-container {
+    width: 80%;
+}
+.left {
+    width: 60%;
+}
+.right {
+    width: 40%;
+}
+}
+
+/*phone*/
+@media (max-width: 500px) {
+header nav {
+    height: 18vh;
+    flex-direction: column;
+}
+.links {
+    width: 100%;
+}
+.logo {
+    text-align: center;
+}
+.titles {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.container {
+    flex-wrap: wrap;
+}
+.box {
+    width: 90%;
+    margin: 4% 0;
+}
+#about .text {
+    width: 90%;
+}
+.gallery div {
+    width: 90%;
+}
+#contact {
+    justify-content: center;
+}
+.left,
+.right {
+    width: 90%;
+}
+.right {
+    order: -1;
+}
+#contact h2 {
+    order: -2;
+}
+.img-container {
+    width: 90%;
+}
+.contact-info {
+    width: 90%;
+}
+footer {
+    flex-wrap: wrap;
+}
+footer div {
+    width: 90%;
+    margin: 4% 0;
+}
+.copyright {
+    justify-content: flex-start;
+}
+}

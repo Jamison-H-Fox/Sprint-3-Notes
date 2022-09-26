@@ -1,5 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    background-image: url(https://sat02pap002files.storage.live.com/y4mNpLtDTYSbjMBt1HiI1L8mLgLjioNss8VNY10JQwtvyVnAsowAeBp_LD6fHvEaqvhqsY6yl9OMgKFi1HwbUP1D0-WFBG5sCcq_gXiec9FffVp_sLt1vzbtsizJAC9VLUpYz1YX40iGrDnHELQZbnQOOpFRHaG62hjsDFfnQ0c0lqmHNEa-u_h0_SWrCMp3Y9i?width=6016&height=4016&cropmode=none);
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+
+#nav a{
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
-    color: blue;
+    color: blanchedalmond;
+    font-family: serif;
+    text-align: center;
+    padding: 25px;
 }
 
 img {
@@ -9,12 +38,12 @@ img {
 ul.interests {
     /* background-image: url("resources/images/2022FoxFamily_101.jpg"); */
     background-image: url("https://th.bing.com/th/id/OIP.__mULWmOUA8yERllDQ_ZqwHaE8?pid=ImgDet&rs=1");
+    background-position: center;
+    background-size:cover;
+    height: 300px;
 }
 
 a {
     color: blue;
-}
-
-h1, h2, ol{
-    font-family: sans-serif;
+    font-style: normal;
 }
