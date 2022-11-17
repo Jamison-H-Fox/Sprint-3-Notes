@@ -1,409 +1,370 @@
-/* CSS Reset
+/* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,
+samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,
+nav,section {
+  display: block;
 }
-
 body {
-    line-height: 1;
+  line-height: 1;
 }
-
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
+/* General Styles */
 * {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-max-width: 100%;
-/*put a border around everything to see where it stops and starts*/
-/*     border:1px solid grey; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* put a border around everything to see where it stops and starts */
+  /*     border:1px solid red; */
 }
-
-/*General Styles*/
 html {
-font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-font-size: 1.8rem;
-line-height: 1.5;
-color: #4f4f4f;
-font-family: "PT Sans", sans-serif;
-background-color: #fffafa;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #4f4f4f;
+  font-family: "PT Sans", sans-serif;
+  background-color: #fffafa;
 }
 h1,
 h2,
 h3,
 h4 {
-letter-spacing: 3px;
-font-family: "Nunito", sans-serif;
-text-align: center;
+  letter-spacing: 3px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
 h1 {
-font-size: 5rem;
+  font-size: 5rem;
 }
 h2 {
-font-size: 3rem;
+  font-size: 3rem;
 }
 h3 {
-font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 section {
-padding: 4% 0;
+  padding: 4% 0;
 }
 a {
-text-decoration: none;
-letter-spacing: 3px;
-color: #4f4f4f;
-font-family: "PT Sans", sans-serif;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #4f4f4f;
+  font-family: "PT Sans", sans-serif;
 }
 a:hover {
-color: #fcb131;
+  color: #fcb131;
 }
 i {
-font-size: 5rem;
+  font-size: 5rem;
 }
 
-/*header section styles*/
+/* Header Section Styles */
 header nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 999;
-    /* Flex Properties */
-    display: flex;
-    justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 10vh;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .logo {
-    width: 20%;
-    margin-left: 3%;
+  width: 20%;
+  margin-left: 3%;
 }
-
 .links {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-/*Top Section Styles*/
+/* Top Section Styles */
 #top {
-    height: 85vh;
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true");
-    margin-top: 5%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+  height: 85vh;
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true");
+  margin-top: 10vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*Farm Section Styles*/
+/* Farm Section Styles */
 .container {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
 }
-
 .box {
-    width: 20%;
-    border: 3px solid #4f4f4f;
-    text-align: center;
-    padding: 4%;
-    background-color: #fff;
+  width: 20%;
+  border: 3px solid #4f4f4f;
+  text-align: center;
+  padding: 4%;
+  background-color: #fff;
 }
-
 .box h3 {
-    margin: 15% 0;
+  margin: 15% 0;
 }
 
-/*blank section styles*/
-
+/* Hero Image Section Styles */
 .hero-image {
-    height: 40vh;
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  height: 40vh;
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/*About Section Styles*/
+/* About Section Styles */
 #about {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .text {
-    width: 60%;
-    border: 3px solid #4f4f4f;
-    background-color: #fff;
-    text-align: center;
-    padding: 4%;
+  width: 60%;
+  border: 3px solid #4f4f4f;
+  background-color: #fff;
+  text-align: center;
+  padding: 4%;
 }
-
 .text p {
-    text-align: left;
+  text-align: left;
 }
 
-/*Gallery Section Styles*/
-
+/* Gallery Section Styles */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .gallery div {
-    width: 40%;
-    height: 40vh;
-    margin: 4% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 40%;
+  height: 40vh;
+  margin: 4% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
 }
-
 .gallery div .hide {
-    width: 70%;
-    height: 10vh;
-    background-color: #fff;
-    display: none;
+  width: 70%;
+  height: 10vh;
+  background-color: #fff;
+  display: none;
 }
-
 .gallery div .hide h2 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
-
 .gallery div:hover .hide {
-    display: block;
+  display: block;
 }
-
 .farm {
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/barn.jpg?raw=true");
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/barn.jpg?raw=true");
 }
-
 .cook {
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/cook.jpg?raw=true");
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/cook.jpg?raw=true");
 }
-
 .produce {
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/produce.jpg?raw=true");
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/produce.jpg?raw=true");
 }
-
 .animals {
-    background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/sheep.jpg?raw=true");
+  background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/sheep.jpg?raw=true");
 }
 
-/*Contact Section Styles*/
+/* Contact Section Styles */
 #contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 #contact h2 {
-    width: 100%;
+  width: 100%;
 }
-
 .left,
 .right {
-    width: 50%;
-    padding: 4% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  padding: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .contact-info {
-    width: 35%;
-    line-height: 2;
+  width: 35%;
+  line-height: 2;
 }
-
 .contact-info h3 {
-    text-align: left;
+  text-align: left;
 }
-
 .img-container {
-    width: 70%;
+  width: 70%;
 }
 
-/*Footer Section Styles*/
-
+/* Footer Section Styles */
 footer {
-    background-color: #fcb131;
-    color: #fff;
-    padding: 2% 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  background-color: #fcb131;
+  color: #fff;
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
 }
-
 footer a {
-    color: #fff;
+  color: #fff;
 }
-
 footer a:hover {
-    color: #4f4f4f;
+  color: #4f4f4f;
 }
-
 footer div {
-    width: 30%;
+  width: 30%;
 }
-
 nav.social {
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
 }
-
 nav.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 nav.main a {
-    margin: 2% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 2% 0;
 }
-
 .copyright {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-/*Media Queries*/
-/*Tablet*/
+/* Media Queries */
+/* Tablet */
 @media (max-width: 800px) {
-.links {
+  .links {
     width: 70%;
-}
-#about .text {
+  }
+  #about .text {
     width: 80%;
-}
-.gallery div .hide {
+  }
+  .gallery div .hide {
     background-color: #fff;
     display: block;
     width: 70%;
-}
-.gallery div .hide h2 {
+  }
+  .gallery div .hide h2 {
     font-size: 2.2rem;
-}
-.contact-info {
+  }
+  .contact-info {
     width: 50%;
-}
-.img-container {
+  }
+  .img-container {
     width: 80%;
-}
-.left {
+  }
+  .left {
     width: 60%;
-}
-.right {
+  }
+  .right {
     width: 40%;
-}
+  }
 }
 
-/*phone*/
+/* Phone Media Query */
 @media (max-width: 500px) {
-header nav {
+  header nav {
     flex-direction: column;
     height: 18vh;
-}
-.links {
+  }
+  .links {
     width: 100%;
-}
-.logo {
+  }
+  .logo {
     text-align: center;
-}
-.titles {
+  }
+  .titles {
     background-color: rgba(255, 255, 255, 0.8);
-}
-.container {
+  }
+  .container {
     flex-wrap: wrap;
-}
-.box {
+  }
+  .box {
     width: 90%;
     margin: 4% 0;
-}
-#about .text {
+  }
+  #about .text {
     width: 90%;
-}
-.gallery div {
+  }
+  .gallery div {
     width: 90%;
-}
-#contact {
+  }
+  #contact {
     justify-content: center;
-}
-.left,
-.right {
+  }
+  .left,
+  .right {
     width: 90%;
-}
-.right {
+  }
+  .right {
     order: -1;
-}
-#contact h2 {
+  }
+  #contact h2 {
     order: -2;
-}
-.img-container {
+  }
+  .img-container {
     width: 90%;
-}
-.contact-info {
+  }
+  .contact-info {
     width: 90%;
-}
-footer {
+  }
+  footer {
     flex-wrap: wrap;
-}
-footer div {
+  }
+  footer div {
     width: 90%;
     margin: 4% 0;
-}
-.copyright {
+  }
+  .copyright {
     justify-content: flex-start;
+  }
 }
-} */
